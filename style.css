@@ -14,13 +14,16 @@
   padding: 0 20px 0 20px;
   text-align: center;
   font-size: 22px;
-  margin: 20px 10px 0 10px;
+  margin: 20px 10px 5px 10px;
 }
 
 img {
   border-radius: 30px;
 
+  margin: 5px auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+p {
+  margin: 2px 30px;
 }
