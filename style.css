@@ -16,3 +16,11 @@
   font-size: 22px;
   margin: 20px 10px 0 10px;
 }
+
+img {
+  border-radius: 30px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
