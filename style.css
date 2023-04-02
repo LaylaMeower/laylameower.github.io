@@ -1,29 +1,38 @@
 :root {
-  font-family: "JetBrains Mono", monospace;
-  color: white;
-  font-weight: 400;
-  font-size: 16px;
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
 
-  background-color: rgb(34, 32, 52);
+    background-color: rgb(34, 32, 52);
 }
 
 .title {
-  color: black;
-  background-color: rgb(219, 66, 212);
-  border-radius: 30px;
-  padding: 0 20px 0 20px;
-  text-align: center;
-  font-size: 22px;
-  margin: 20px 10px 5px 10px;
+    color: black;
+    background-color: rgb(219, 66, 212);
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 10px 5px 10px;
 }
 
-img {
-  border-radius: 30px;
+.button {
+    width: 25%;
+    margin: 15px auto;
+}
 
-  margin: 5px auto;
-  display: block;
+.button:hover {
+    background-color: rgb(219, 35, 209);
 }
 
 p {
-  margin: 2px 30px;
+    margin: 7px 30px;
+}
+
+img {
+    border-radius: 30px;
+
+    margin: 5px auto;
+    display: block;
 }
