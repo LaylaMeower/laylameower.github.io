@@ -7,23 +7,9 @@
     background-color: rgb(34, 32, 52);
 }
 
-.title {
-    color: black;
-    background-color: rgb(219, 66, 212);
-    border-radius: 30px;
-    padding: 0 20px 0 20px;
-    text-align: center;
-    font-size: 22px;
-    margin: 20px 10px 5px 10px;
-}
-
-.button {
-    width: 25%;
-    margin: 15px auto;
-}
-
-.button:hover {
-    background-color: rgb(219, 35, 209);
+body {
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -33,6 +19,25 @@ p {
 img {
     margin: 5px;
     border-radius: 30px;
+}
+
+.title {
+    color: black;
+    background-color: rgb(219, 66, 212);
+    border-radius: 30px;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 20px 5px 20px;
+}
+
+.button {
+    width: 25%;
+    margin: 15px auto;
+}
+
+.button:hover {
+    background-color: rgb(219, 35, 209);
 }
 
 .image {
@@ -60,4 +65,141 @@ img {
 
 .list > li > a:hover {
     text-decoration: underline;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+}
+
+#menuToggle a:hover {
+    text-decoration: underline;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    top: 172px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    top: 200px;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background-color: #DB42D4;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:hover {
+    background-color: rgb(219, 35, 209);
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0 0;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0 100%;
+}
+
+#menuToggle span {
+    transform: rotate(180deg) translate(-100%);
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    transform: rotate(45deg);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    transform: rotate(-45deg);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+
+    background: rgb(34, 32, 52);
+    border-radius: 30px;
+    border-color: rgb(219, 66, 212);
+    border-width: thick;
+    border-style: solid;
+
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-145%, 0);
+
+    transition: border-color 0.3s, transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu:hover {
+    border-color: rgb(219, 35, 209);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menu li > a {
+    color: white;
+    text-decoration-color: white;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: none;
 }
