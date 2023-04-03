@@ -31,8 +31,33 @@ p {
 }
 
 img {
+    margin: 5px;
     border-radius: 30px;
+}
 
+.image {
     margin: 5px auto;
     display: block;
+}
+
+.list {
+    padding-left: 0;
+    text-align: center;
+}
+
+.list > li {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    margin: 5px;
+}
+
+.list > li > a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.list > li > a:hover {
+    text-decoration: underline;
 }
