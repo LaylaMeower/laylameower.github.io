@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "JetBrains Mono", monospace;
+}
+
+.title {
+    @apply text-black bg-[#DB42D4] rounded-[30px] px-5 text-center text-[22px]
+}
