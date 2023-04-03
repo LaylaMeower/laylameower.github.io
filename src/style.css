@@ -117,7 +117,7 @@ img {
 
     z-index: 1;
 
-    transform-origin: 4px 0px;
+    transform-origin: 4px 0;
 
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
     background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
@@ -177,14 +177,14 @@ img {
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
 
-    transform-origin: 0% 0%;
+    transform-origin: 0 0;
     transform: translate(-145%, 0);
 
     transition: border-color 0.3s, transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 #menu:hover {
-    border-color: rgb(219, 35, 209);
+    border-color: #DB23D1;
 }
 
 #menu li {
@@ -195,6 +195,10 @@ img {
 #menu li > a {
     color: white;
     text-decoration-color: white;
+}
+
+#menu li {
+    color: #DB42D4;
 }
 
 /*
