@@ -69,13 +69,6 @@ img {
     text-align: center;
 }
 
-.list > li > p {
-    color: black;
-    text-align: center;
-    margin: 0;
-    display: inline;
-}
-
 .list > li > a:hover {
     text-decoration: underline;
 }
